@@ -1,0 +1,104 @@
+<div class="jumbotron">
+	<h1 class="display-3">¿Dónde No?</h1>
+	<p class="lead">
+  	Llena tu reporte de delincuencia cerca de UPIICSA y visualiza el mapa geográfico de las zonas más peligrosas.
+  </p>
+	<p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+</div>
+
+<h2 class="text-center">Reportes Estadísticos</h2>
+<p class="lead text-center">Aquí presentamos los reportes estadísticos más importantes hasta ahora recopilados...</p>
+<hr>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Asaltos </h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-sm-4 text-center">
+       <h3>Asaltos por día</h3>
+      </div>
+      <div class="col-sm-4 text-center">
+       <h3>Asaltos por hora</h3>
+      </div>
+      <div class="col-sm-4 text-center">
+       <h3>Asaltos por mes</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 text-center">
+    		{{chartist-chart ratio="ct-square" data=model.chartData}}
+      </div>
+      <div class="col-sm-4 text-center">
+        {{chartist-chart type="bar" data=model.chartData}}
+      </div>
+      <div class="col-sm-4 text-center">
+        {{chartist-chart type="line" data=model.chartData}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Violencia Física</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-sm-4 text-center">
+       <h3>Asaltos por día</h3>
+      </div>
+      <div class="col-sm-4 text-center">
+       <h3>Asaltos por hora</h3>
+      </div>
+      <div class="col-sm-4 text-center">
+       <h3>Asaltos por mes</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 text-center">
+    		{{chartist-chart ratio="ct-square" data=model.chartData}}
+      </div>
+      <div class="col-sm-4 text-center">
+        {{chartist-chart type="bar" data=model.chartData}}
+      </div>
+      <div class="col-sm-4 text-center">
+        {{chartist-chart type="line" data=model.chartData}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Extorsión</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-sm-4 text-center">
+       <h3>Asaltos por día</h3>
+      </div>
+      <div class="col-sm-4 text-center">
+       <h3>Asaltos por hora</h3>
+      </div>
+      <div class="col-sm-4 text-center">
+       <h3>Asaltos por mes</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 text-center">
+    		{{chartist-chart ratio="ct-square" data=model.chartData}}
+      </div>
+      <div class="col-sm-4 text-center">
+        {{chartist-chart type="bar" data=model.chartData}}
+      </div>
+      <div class="col-sm-4 text-center">
+        {{chartist-chart type="line" data=model.chartData}}
+      </div>
+    </div>
+
+
+  </div>
+</div>
+

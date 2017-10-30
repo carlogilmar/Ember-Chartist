@@ -1,0 +1,44 @@
+<h1 class="text-center">Registra un Reporte</h1><br>
+<div class="row content">
+	<div class="col-sm-2 sidenav"></div>
+	<div class="col-sm-8 text-left">
+		<form>
+			<div class="form-group">
+				<label for="exampleSelect1">Selecciona el tipo de delito a reportar:</label>
+				<select class="form-control" id="exampleSelect1">
+					<option>Asalto</option>
+					<option>Violación</option>
+					<option>Violencia Física</option>
+					<option>Robo de autopartes</option>
+					<option>Extorsión</option>
+					<option>Lesión con arma blanca</option>
+					<option>Robo con violencia</option>
+					<option>Robo a vehículo</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="example-datetime-local-input" class="col-2 col-form-label">Fecha y hora del incidente</label>
+				<div class="col-10">
+					<input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="exampleSelect2">Selecciona la gravedad del asunto</label>
+				<select multiple class="form-control" id="exampleSelect2">
+					<option>Bajo</option>
+					<option>Bajo medio</option>
+					<option>Medio</option>
+					<option>Medio alto</option>
+					<option>Alto</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="exampleTextarea">Agrega una descripción</label>
+				<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+			</div>
+			<div class="form-group text-center">
+			  <button type="submit" class="btn btn-primary text-center">Submit</button>
+		  </div>
+		</form>
+	</div>
+</div>

@@ -1,5 +1,26 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<br>{{#bs-navbar type=(if inverse 'inverse') fluid=fluid collapsed=collapsed onCollapse=(action (mut collapsed) true) onExpand=(action (mut collapsed) false) as |navbar|}}
+  <div class="navbar-header">
+    {{navbar.toggle}}
+    {{#link-to "index" class="navbar-brand"}}¿Donde No?{{/link-to}}
+  </div>
+  {{#navbar.content}}
+    {{#navbar.nav as |nav|}}
+      {{#nav.item}}{{#nav.link-to "about"}}Información{{/nav.link-to}}{{/nav.item}}
+      {{#nav.item}}{{#nav.link-to "contact"}}Contacto{{/nav.link-to}}{{/nav.item}}
+      {{#nav.item}}{{#nav.link-to "report"}}Agregar Reporte{{/nav.link-to}}{{/nav.item}}
+    {{/navbar.nav}}
+  {{/navbar.content}}
+{{/bs-navbar}}
 
-{{outlet}}
+<div class="container">
+  <div class="container">
+    <div class="row">
+    {{outlet}}
+    </div>
+  </div>
+</div>
+<br><br>
+<footer class="container-fluid text-center" style="background-color: #555; color: white; padding: 15px;">
+  <strong>.NET Carlo Gilmar Padilla Santana</strong>
+</footer>
+
